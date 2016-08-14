@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_MENUDATEALIASGHSVS</name>
+	<author>G@HService Berlin Neukölln, Volkmar Volli Schlothauer (GHSVS)</author>
+	<coauthors>bertmert</coauthors>
+	<creationDate>2016-08-01</creationDate>
+	<copyright>Copyright (C) 2016, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (GHSVS). All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>menudatealias @ ghsvs.de</authorEmail>
+	<authorUrl>https://www.ghsvs.de</authorUrl>
+	<version>2016.08.01</version>
+ <versionHistory>
+2016.08.01:
+- First public release.
+</versionHistory>
+	<description>PLG_CONTENT_MENUDATEALIASGHSVS_XML_DESCRIPTION</description>
+ <updateservers><server type="extension" priority="1" name="PLG_CONTENT_MENUDATEALIASGHSVS">https://updates.ghsvs.de/joomla/plg_content_menudatealiasghsvs.xml</server></updateservers>
+	
+	<files>
+		<filename plugin="menudatealiasghsvs">menudatealiasghsvs.php</filename>
+		<folder>language</folder>
+		<filename>LICENSE.txt</filename>
+		<filename>README.md</filename>
+	</files>
+
+	<config />
+
+</extension>
