@@ -7,7 +7,7 @@
  * @license GNU General Public License version 3 or later; see LICENSE.txt
  * @authorUrl https://www.ghsvs.de
  * @authorEmail menudatealiasghsvs @ ghsvs.de
- * @link 
+ * @link https://github.com/GHSVS-de/plg_content_menudatealiasghsv
  */
 ?>
 <?php
