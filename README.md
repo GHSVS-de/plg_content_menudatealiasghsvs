@@ -21,3 +21,6 @@ The "old-fashioned" date-time alias is created automatically by this plugin
     only if Joomla version is equal/greater than 3.6.0.
 
 **Enter an empty space in Alias field if you want the automatic Joomla behavior (Alias based upon Title field) while saving.**
+
+### German Description
+https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel
