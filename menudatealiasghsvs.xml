@@ -8,12 +8,15 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>menudatealias @ ghsvs.de</authorEmail>
 	<authorUrl>https://www.ghsvs.de</authorUrl>
-	<version>2016.08.14</version>
+	<version>2017.02.14</version>
  <versionHistory>
 2016.08.01:
 - First public release.
 2016.08.14:
 - Added Readme.md
+2017.02.14:
+- Added @link to German description
+- CS
 </versionHistory>
 	<description>PLG_CONTENT_MENUDATEALIASGHSVS_XML_DESCRIPTION</description>
  <updateservers><server type="extension" priority="1" name="PLG_CONTENT_MENUDATEALIASGHSVS">https://updates.ghsvs.de/joomla/plg_content_menudatealiasghsvs.xml</server></updateservers>
