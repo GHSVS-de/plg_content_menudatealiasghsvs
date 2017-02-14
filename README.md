@@ -1,9 +1,6 @@
 # plg_content_menudatealiasghsvs
 Joomla plugin. Bring back datetime alias for menu items of type System Links > Menu Item Alias
 
-## Temporarily download link
-https://updates.ghsvs.de/joomla/plg_content_menudatealiasghsvs/plg_content_menudatealiasghsvs_current.zip
-
 ## Why this plugin?
 See https://github.com/joomla/joomla-cms/pull/10756
 
