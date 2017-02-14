@@ -7,7 +7,7 @@
  * @license GNU General Public License version 3 or later; see LICENSE.txt
  * @authorUrl https://www.ghsvs.de
  * @authorEmail menudatealiasghsvs @ ghsvs.de
- * @link 
+ * @link german description: https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel
  */
 ?>
 <?php
@@ -18,9 +18,9 @@ class PlgContentMenuDateAliasGhsvs extends JPlugin
 	public function onContentBeforeSave($context, $table, $isNew)
 	{
 		if (
-		 JFactory::getApplication()->isAdmin()
-   && version_compare(JVERSION, '3.6.0', 'ge')
-		 && $context == 'com_menus.item'
+			JFactory::getApplication()->isAdmin()
+			&& version_compare(JVERSION, '3.6.0', 'ge')
+			&& $context == 'com_menus.item'
 			&& $isNew
 			&& !$table->alias
 			&& $table->type == 'alias'
