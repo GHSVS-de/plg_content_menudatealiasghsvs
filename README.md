@@ -22,5 +22,5 @@ The "old-fashioned" date-time alias is created automatically by this plugin
 
 **Enter an empty space in Alias field if you want the automatic Joomla behavior (Alias based upon Title field) while saving.**
 
-### German Description
+### German Description / Deutsche Beschreibung
 https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel
