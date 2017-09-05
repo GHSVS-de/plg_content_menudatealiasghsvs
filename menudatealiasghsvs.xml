@@ -8,7 +8,7 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>menudatealias @ ghsvs.de</authorEmail>
 	<authorUrl>https://www.ghsvs.de</authorUrl>
-	<version>2017.02.14</version>
+	<version>2017.09.05</version>
  <versionHistory>
 2016.08.01:
 - First public release.
@@ -17,6 +17,8 @@
 2017.02.14:
 - Added @link to German description
 - CS
+2017.09.05:
+- Added new parameter onlyNewMenuItems.
 </versionHistory>
 	<description>PLG_CONTENT_MENUDATEALIASGHSVS_XML_DESCRIPTION</description>
  <updateservers><server type="extension" priority="1" name="PLG_CONTENT_MENUDATEALIASGHSVS">https://updates.ghsvs.de/joomla/plg_content_menudatealiasghsvs.xml</server></updateservers>
@@ -28,6 +30,17 @@
 		<filename>README.md</filename>
 	</files>
 
-	<config />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="onlyNewMenuItems" type="list" default="1"
+				label="Only new menu items"
+				description="Set datetime alias only if a new menu item is saved? If NO then datetime alias will be set always if Alias field is empty.">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
 
 </extension>
