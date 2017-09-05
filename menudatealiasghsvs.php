@@ -17,11 +17,12 @@ class PlgContentMenuDateAliasGhsvs extends JPlugin
 {
 	public function onContentBeforeSave($context, $table, $isNew)
 	{
+		$onlyNewMenuItems = $this->params->get('onlyNewMenuItems', 1);
 		if (
 			JFactory::getApplication()->isAdmin()
 			&& version_compare(JVERSION, '3.6.0', 'ge')
 			&& $context == 'com_menus.item'
-			&& $isNew
+			&& ($isNew || !$onlyNewMenuItems)
 			&& !$table->alias
 			&& $table->type == 'alias'
 
