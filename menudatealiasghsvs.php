@@ -22,7 +22,7 @@ class PlgContentMenuDateAliasGhsvs extends JPlugin
 			JFactory::getApplication()->isAdmin()
 			&& version_compare(JVERSION, '3.6.0', 'ge')
 			&& $context == 'com_menus.item'
-			&& ($isNew && $onlyNewMenuItems)
+			&& ($isNew || !$onlyNewMenuItems)
 			&& !$table->alias
 			&& $table->type == 'alias'
 
