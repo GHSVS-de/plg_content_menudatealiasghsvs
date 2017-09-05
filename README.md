@@ -14,7 +14,7 @@ The behavior has changed and the automatic alias is based upon the `Title` field
 
 The "old-fashioned" date-time alias is created automatically by this plugin
 
-    only for NEW menu items (saved for the first time).
+    only for NEW menu items (saved for the first time). NEW: You can change this behavior in plugin settings.
     only for menu items of type Menu Item Alias.
     only if field Alias is left empty.
     only in back-end of Joomla.
