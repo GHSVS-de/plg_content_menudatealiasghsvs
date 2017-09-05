@@ -35,7 +35,7 @@
 			<fieldset name="basic">
 				<field name="onlyNewMenuItems" type="list" default="1"
 				label="Only new menu items"
-				description="Set datetime alias only if a new menu item is saved? If NO then datetime alias will be set always if Alias field is empty.">
+				description="Set datetime alias only if a new menu item (of type Menu Item Alias) is saved? If NO then datetime alias will be set always if Alias field (of Menu Item Alias) is empty.">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
