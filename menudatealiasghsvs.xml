@@ -10,17 +10,7 @@
 	<authorUrl>https://www.ghsvs.de</authorUrl>
 	<version>2019.06.11</version>
 	<versionHistory>
-2016.08.01:
-- First public release.
-2016.08.14:
-- Added Readme.md
-2017.02.14:
-- Added @link to German description
-- CS
-2017.09.05:
-- Added new parameter onlyNewMenuItems.
-2019.06.10:
-- Test Joomla 4.
+		https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
 	</versionHistory>
 	<description>PLG_CONTENT_MENUDATEALIASGHSVS_XML_DESCRIPTION</description>
 
