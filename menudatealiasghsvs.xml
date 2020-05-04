@@ -8,7 +8,7 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.ghsvs.de</authorUrl>
-	<version>2019.06.11</version>
+	<version>2020.05.05</version>
 	<versionHistory>
 		https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
 	</versionHistory>
@@ -19,6 +19,8 @@
 	</updateservers>
 
 	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/menudatealiasghsvs-changelog.xml</changelogurl>
+	
+	<infourl>https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs</infourl>
 
 	<scriptfile>installerScript.php</scriptfile>
 
