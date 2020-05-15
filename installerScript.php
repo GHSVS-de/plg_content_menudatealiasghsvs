@@ -3,7 +3,7 @@
  * @package plugin.content menudatealiasghsvs for Joomla! ge 3.6.0
  * @version See menudatealiasghsvs.xml
  * @author G@HService Berlin Neukölln, Volkmar Volli Schlothauer
- * @copyright Copyright (C) 2016-2019, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.
+ * @copyright Copyright (C) 2016-2020, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.
  * @license GNU General Public License version 3 or later; see LICENSE.txt
  * @authorUrl https://www.ghsvs.de
  * @link german description: https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel
@@ -25,51 +25,42 @@ use Joomla\CMS\Log\Log;
 
 class plgContentMenudatealiasGhsvsInstallerScript extends InstallerScript
 {
-/*
-	public function __construct()
-	{
-		$this->deleteFiles = array(
-			str_replace(
-				JPATH_ROOT, '',
-				Factory::getApplication()->get('log_path') . '/plg_system_hyphenateghsvs-log.txt'
-			),
-		);
-	}
-*/
-
 	public function preflight($type, $parent)
 	{
 		$manifest = @$parent->getManifest();
 
 		if ($manifest instanceof SimpleXMLElement)
 		{
-			$minimumPhp = trim((string) $manifest->minimumPhp);
-			$minimumJoomla = trim((string) $manifest->minimumJoomla);
-
-			// Custom
-			$maximumPhp = trim((string) $manifest->maximumPhp);
-			$maximumJoomla = trim((string) $manifest->maximumJoomla);
-
-			$this->minimumPhp = $minimumPhp ? $minimumPhp : $this->minimumPhp;
-			$this->minimumJoomla = $minimumJoomla ? $minimumJoomla : $this->minimumJoomla;
-
-			if ($maximumJoomla && version_compare(JVERSION, $maximumJoomla, '>'))
+			if ($type === 'update' || $type === 'install' || $type === 'discover_install')
 			{
-				$msg = 'Your Joomla version (' . JVERSION . ') is too high for this extension. Maximum Joomla version is: ' . $maximumJoomla . '.';
-				Log::add($msg, Log::WARNING, 'jerror');
-			}
-
-			// Check for the maximum PHP version before continuing
-			if ($maximumPhp && version_compare(PHP_VERSION, $maximumPhp, '>'))
-			{
-				$msg = 'Your PHP version (' . PHP_VERSION . ') is too high for this extension. Maximum PHP version is: ' . $maximumPhp . '.';
-
-				Log::add($msg, Log::WARNING, 'jerror');
-			}
-
-			if (isset($msg))
-			{
-				return false;
+				$minimumPhp = trim((string) $manifest->minimumPhp);
+				$minimumJoomla = trim((string) $manifest->minimumJoomla);
+	
+				// Custom
+				$maximumPhp = trim((string) $manifest->maximumPhp);
+				$maximumJoomla = trim((string) $manifest->maximumJoomla);
+	
+				$this->minimumPhp = $minimumPhp ? $minimumPhp : $this->minimumPhp;
+				$this->minimumJoomla = $minimumJoomla ? $minimumJoomla : $this->minimumJoomla;
+	
+				if ($maximumJoomla && version_compare(JVERSION, $maximumJoomla, '>'))
+				{
+					$msg = 'Your Joomla version (' . JVERSION . ') is too high for this extension. Maximum Joomla version is: ' . $maximumJoomla . '.';
+					Log::add($msg, Log::WARNING, 'jerror');
+				}
+	
+				// Check for the maximum PHP version before continuing
+				if ($maximumPhp && version_compare(PHP_VERSION, $maximumPhp, '>'))
+				{
+					$msg = 'Your PHP version (' . PHP_VERSION . ') is too high for this extension. Maximum PHP version is: ' . $maximumPhp . '.';
+	
+					Log::add($msg, Log::WARNING, 'jerror');
+				}
+	
+				if (isset($msg))
+				{
+					return false;
+				}
 			}
 
 			if (trim((string) $manifest->allowDowngrades))
