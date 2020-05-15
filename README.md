@@ -10,7 +10,7 @@ When you saved a new menu item of type `Menu Item Alias` and left the field `Ali
 ### Since Joomla 3.6.0
 The behavior has changed and the automatic alias is based upon the `Title` field (e.g. Title "Home of This" results in `home-of-this`).
 
-### This plugin brings partially back the old behavior.
+### This plugin brings back the old behavior.
 
 The "old-fashioned" date-time alias is created automatically by this plugin
 
