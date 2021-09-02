@@ -1,41 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.6" type="plugin" group="content" method="upgrade">
-	<name>PLG_CONTENT_MENUDATEALIASGHSVS</name>
-	<author>G@HService Berlin Neukölln, Volkmar Volli Schlothauer (GHSVS)</author>
-	<coauthors>bertmert</coauthors>
-	<creationDate>2016-08-01</creationDate>
-	<copyright>Copyright (C) 2016-2020, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (GHSVS). All rights reserved.</copyright>
-	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
-	<authorEmail></authorEmail>
-	<authorUrl>https://www.ghsvs.de</authorUrl>
-	<version>2020.05.15</version>
-	<versionHistory>
-		https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
-	</versionHistory>
-	<description>PLG_CONTENT_MENUDATEALIASGHSVS_XML_DESCRIPTION</description>
+<extension type="{{type}}" client="{{client}}" group="{{folder}}" method="upgrade">
+	<name>{{nameUpper}}</name>
+	<author>{{authorName}}</author>
+	<creationDate>{{creationDate}}</creationDate>
+	<copyright>{{copyright}}</copyright>
+	<license>{{licenseLong}}</license>
+	<authorUrl>{{authorUrl}}</authorUrl>
+	<version>{{version}}</version>
+	<description>{{nameUpper}}_XML_DESCRIPTION</description>
 
-	<updateservers>
-		<server type="extension" priority="1" name="PLG_CONTENT_MENUDATEALIASGHSVS">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/menudatealiasghsvs-update.xml</server>
-	</updateservers>
+	<updateservers><server type="extension" priority="1" name="{{nameUpper}}">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{filename}}-update.xml</server></updateservers>
 
-	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/menudatealiasghsvs-changelog.xml</changelogurl>
-	
-	<infourl>https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs</infourl>
+	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{filename}}-changelog.xml</changelogurl>
+
+	<infourl>https://updates.ghsvs.de/changelog.php?file={{filename}}</infourl>
 
 	<scriptfile>installerScript.php</scriptfile>
-
-	<minimumPhp>7.2.0</minimumPhp>
-	<minimumJoomla>3.9.0</minimumJoomla>
-	<!--<maximumJoomla>3.9.99999</maximumJoomla>-->
-	<!--<maximumPhp></maximumPhp>-->
-	<allowDowngrades>1</allowDowngrades>
+	<minimumPhp>{{minimumPhp}}</minimumPhp>
+	<maximumPhp>{{maximumPhp}}</maximumPhp>
+	<minimumJoomla>{{minimumJoomla}}</minimumJoomla>
+	<maximumJoomla>{{maximumJoomla}}</maximumJoomla>
+	<allowDowngrades>{{allowDowngrades}}</allowDowngrades>
 
 	<files>
-		<filename plugin="menudatealiasghsvs">menudatealiasghsvs.php</filename>
+		<filename plugin="{{filename}}">{{filename}}.php</filename>
 		<folder>language</folder>
 		<filename>installerScript.php</filename>
 		<filename>LICENSE.txt</filename>
-		<filename>README.md</filename>
 	</files>
 
 	<config>
