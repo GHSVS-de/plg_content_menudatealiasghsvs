@@ -67,13 +67,14 @@
 		"g-npm-update-check": "ncu",
 		"g-ncu-override-json": "ncu -u"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"npm-check-updates": "^11.8.3"
+	},
 	"devDependencies": {
 		"adm-zip": "0.5.5",
 		"chalk": "^4.1.2",
 		"fs-extra": "10.0.0",
 		"rimraf": "3.0.2"
 	},
-	"peerDependencies": {},
 	"browserslist": []
 }
