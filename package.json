@@ -1,0 +1,81 @@
+{
+	"name": "plg_content_menudatealiasghsvs",
+	"nameReal": "plg_content_menudatealiasghsvs",
+	"filename": "hyphenateghsvs",
+	"version": "2021.09.02",
+	"versionCompare": "2020.05.15",
+	"update": {
+		"type": "plugin",
+		"folder": "content",
+		"client": "site",
+		"tag": "stable",
+		"targetplatform": ".*"
+	},
+	"releaseTxt": {
+		"title": "Joomla content plugin MenuDateAliasGhsvs"
+	},
+	"changelog": {
+		"projecturl": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs",
+		"infosDE": "",
+		"infosEN": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs#readme",
+		"docsDE": "https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel",
+		"docsEN": "",
+		"lastTests": [
+			"PHP 8",
+			"PHP 7.4",
+			"Joomla 3.10",
+			"Jommla 4.0"
+		]
+	},
+	"minimumPhp": "7.0.0",
+	"maximumPhp": "8.9999.9999",
+	"minimumJoomla": "3.9.0",
+	"maximumJoomla": "4.9999.9999",
+	"allowDowngrades": "1",
+	"creationDate": "2016-08-01",
+	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
+	"copyright": "(C) 2016, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)",
+	"author": {
+		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+		"email": "",
+		"url": "https://www.ghsvs.de"
+	},
+	"contributors": [
+		{
+			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+			"email": "",
+			"url": "https://www.ghsvs.de"
+		}
+	],
+	"bugs": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs/issues",
+	"homepage": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs#readme",
+	"keywords": [
+		"joomla",
+		"content plugin",
+		"menu items",
+		"datetime alias"
+	],
+	"private": false,
+	"description": "Joomla content plugin. Bring back datetime alias for menu items of type System Links > Menu Item Alias.",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs.git"
+	},
+	"scripts": {
+		"g-build": "node build.js",
+		"g-npm-update-check": "ncu",
+		"g-ncu-override-json": "ncu -u"
+	},
+	"dependencies": {
+		"hyphenopoly": "^4.12.0"
+	},
+	"devDependencies": {
+		"adm-zip": "0.5.5",
+		"chalk": "^4.1.2",
+		"fs-extra": "10.0.0",
+		"rimraf": "3.0.2"
+	},
+	"peerDependencies": {},
+	"browserslist": []
+}
