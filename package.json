@@ -1,7 +1,7 @@
 {
 	"name": "plg_content_menudatealiasghsvs",
 	"nameReal": "plg_content_menudatealiasghsvs",
-	"filename": "hyphenateghsvs",
+	"filename": "menudatealiasghsvs",
 	"version": "2021.09.02",
 	"versionCompare": "2020.05.15",
 	"update": {
@@ -67,9 +67,7 @@
 		"g-npm-update-check": "ncu",
 		"g-ncu-override-json": "ncu -u"
 	},
-	"dependencies": {
-		"hyphenopoly": "^4.12.0"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"adm-zip": "0.5.5",
 		"chalk": "^4.1.2",
