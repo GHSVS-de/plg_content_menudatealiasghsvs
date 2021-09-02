@@ -1,8 +1,5 @@
 const fse = require('fs-extra');
-const util = require("util");
-const rimRaf = util.promisify(require("rimraf"));
 const chalk = require('chalk');
-const path = require("path");
 const replaceXml = require('./build/replaceXml.js');
 const helper = require('./build/helper.js');
 
@@ -14,66 +11,20 @@ const {
 
 const manifestFileName = `${filename}.xml`;
 const Manifest = `${__dirname}/package/${manifestFileName}`;
-const source = `./node_modules/hyphenopoly`;
-const target = `./media/js/hyphenopoly`;
-let versionSub = '';
 
 (async function exec()
 {
 	let cleanOuts = [
 		`./package`,
-		`./dist`,
-		target
+		`./dist`
 	];
 
 	await helper.cleanOut(cleanOuts);
 
-	versionSub = await helper.findVersionSub (
-		path.join(__dirname, source, `package.json`),
-		'Hyphenopoly');
-
-	console.log(chalk.magentaBright(`versionSub identified as: "${versionSub}"`));
-
-	await fse.copy(`./${source}/Hyphenopoly.js`,
-		`./${target}/-uncompressed/Hyphenopoly.js`
+	await fse.copy(`./src`, `./package`
 	).then(
 		answer => console.log(chalk.yellowBright(
-			`Copied unminified "Hyphenopoly.js" into folder "${target}/-uncompressed/".`))
-	);
-
-	await fse.copy(`./${source}/Hyphenopoly_Loader.js`,
-		`./${target}/-uncompressed/Hyphenopoly_Loader.js`
-	).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied unminified "Hyphenopoly_Loader.js" into folder "${target}/-uncompressed/".`))
-	);
-
-	await fse.copy(`./${source}/min`, `${target}`
-	).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied minified JS files and patterns into "${target}".`))
-	);
-
-	await fse.copy(`./${source}/LICENSE`, `./${target}/LICENSE.txt`
-	).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "LICENSE" as "${target}/LICENSE.txt".`))
-	);
-
-	await fse.copy(`./${source}/LICENSE`,	`./src/LICENSE_Hyphenopoly.txt`
-	).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "LICENSE" as "./src/LICENSE_Hyphenopoly.txt".`))
-	);
-
-	await fse.copy("./src", "./package"
-	).then(
-		answer => console.log(chalk.yellowBright(`Copied "./src" to "./package".`))
-	);
-
-	await fse.copy("./media", "./package/media"
-	).then(
-		answer => console.log(chalk.yellowBright(`Copied "./media" to "./package".`))
+			`Copied "./src/*" into "./package".`))
 	);
 
 	if (!(await fse.exists("./dist")))
@@ -84,7 +35,7 @@ let versionSub = '';
 		);
   }
 
-	const zipFilename = `${name}-${version}_${versionSub}.zip`;
+	const zipFilename = `${name}-${version}.zip`;
 
 	await replaceXml.main(Manifest, zipFilename);
 	await fse.copy(`${Manifest}`, `./dist/${manifestFileName}`).then(
@@ -138,8 +89,7 @@ let versionSub = '';
 	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum);
 
 	cleanOuts = [
-		`./package`,
-		target
+		`./package`
 	];
 	await helper.cleanOut(cleanOuts).then(
 		answer => console.log(chalk.cyanBright(chalk.bgRed(
