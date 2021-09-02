@@ -33,8 +33,8 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field name="onlyNewMenuItems" type="list" default="1"
-				label="Only new menu items"
-				description="Set datetime alias only if a new menu item (of type Menu Item Alias) is saved for the first time? If NO then datetime alias will be set always if Alias field (of Menu Item Alias) is empty.">
+					label="PLG_CONTENT_MENUDATEALIASGHSVS_ONLYNEWMENUITEMS"
+					description="PLG_CONTENT_MENUDATEALIASGHSVS_ONLYNEWMENUITEMS_DESC">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
