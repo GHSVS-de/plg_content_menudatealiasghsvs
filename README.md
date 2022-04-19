@@ -35,8 +35,8 @@ https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
 - `cd /mnt/z/git-kram/plg_content_menudatealiasghsvs`
 
 ## node/npm updates/installation
-- `npm run g-npm-update-check` or (faster) `ncu`
-- `npm run g-ncu-override-json` (if needed) or (faster) `ncu -u`
+- `npm run updateCheck` or (faster) `npm outdated`
+- `npm run update` (if needed) or (faster) `npm update --save-dev`
 - `npm install` (if needed)
 
 ## Build installable ZIP package
