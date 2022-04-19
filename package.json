@@ -71,7 +71,7 @@
 	"devDependencies": {
 		"adm-zip": "0.5.5",
 		"chalk": "<5",
-		"fs-extra": "10.0.0",
+		"fs-extra": "^10.1.0",
 		"rimraf": "3.0.2"
 	},
 	"browserslist": []
