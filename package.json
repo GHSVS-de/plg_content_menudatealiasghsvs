@@ -64,15 +64,13 @@
 	},
 	"scripts": {
 		"g-build": "node build.js",
-		"g-npm-update-check": "ncu",
-		"g-ncu-override-json": "ncu -u"
+		"updateCheck": "npm outdated",
+		"update": "npm update --save-dev"
 	},
-	"dependencies": {
-		"npm-check-updates": "^11.8.3"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"adm-zip": "0.5.5",
-		"chalk": "^4.1.2",
+		"chalk": "<5",
 		"fs-extra": "10.0.0",
 		"rimraf": "3.0.2"
 	},
