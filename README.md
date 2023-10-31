@@ -14,19 +14,17 @@ The behavior has changed and the automatic alias is based upon the `Title` field
 
 The "old-fashioned" date-time alias is created automatically by this plugin
 
-    only for NEW menu items (saved for the first time). NEW: You can change this behavior in plugin settings.
-    only for menu items of type Menu Item Alias.
-    only if field Alias is left empty.
-    only in back-end of Joomla.
-    only if Joomla version is equal/greater than 3.6.0.
+- only for NEW menu items (saved for the first time).
+	- You can change this behavior in plugin settings.
+- only for menu items of type Menu Item Alias.
+- only if field Alias is left empty.
+- only in back-end of Joomla.
+- only if Joomla version is equal/greater than 3.6.0.
 
 **Enter an empty space in Alias field if you want the automatic Joomla behavior (Alias based upon Title field) while saving.**
 
 ### German Description / Deutsche Beschreibung
-https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel
-
-### Changelogs
-https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
+https://ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel
 
 -----------------------------------------------------
 
@@ -36,7 +34,7 @@ https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
 
 ## node/npm updates/installation
 - `npm run updateCheck` or (faster) `npm outdated`
-- `npm run update` (if needed) or (faster) `npm update --save-dev`
+- `npm run update` or (faster) `npm update --save-dev`
 - `npm install` (if needed)
 
 ## Build installable ZIP package
@@ -46,5 +44,5 @@ https://updates.ghsvs.de/changelog.php?file=menudatealiasghsvs
 
 ### For Joomla update and changelog server
 - Create new release with new tag.
-- - See release description in `dist/release.txt`.
-- Extracts(!) of the update and changelog XML for update and changelog servers are in `./dist` as well. Copy/paste and necessary additions.
+  - See release description in `dist/release_no-changelog.txt`.
+- Extracts of the update XML for update servers are in `./dist` as well. Copy/paste and necessary additions.
