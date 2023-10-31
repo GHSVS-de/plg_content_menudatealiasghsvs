@@ -33,6 +33,9 @@ class plgContentMenudatealiasGhsvsInstallerScript extends InstallerScript
 	 */
 	protected $deleteFiles = [
 		'/plugins/content/menudatealiasghsvs/README.md',
+		'/plugins/content/menudatealiasghsvs/language/en-GB/en-GB.plg_content_menudatealiasghsvs.ini',
+		'/plugins/content/menudatealiasghsvs/language/en-GB/en-GB.plg_content_menudatealiasghsvs.sys.ini',
+		'/plugins/content/menudatealiasghsvs/menudatealiasghsvs.php',
 	];
 
 	/**
