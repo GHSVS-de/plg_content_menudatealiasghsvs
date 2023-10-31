@@ -64,7 +64,7 @@
 		"datetime alias"
 	],
 	"private": false,
-	"description": "Joomla content plugin. Bring back datetime alias for menu items of type System Links > Menu Item Alias.",
+	"description": "Joomla content plugin. Bring back datetime alias for menu items of type System Links - Menu Item Alias.",
 	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
