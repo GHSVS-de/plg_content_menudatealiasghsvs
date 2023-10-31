@@ -46,3 +46,7 @@ https://ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-a
 - Create new release with new tag.
   - See release description in `dist/release_no-changelog.txt`.
 - Extracts of the update XML for update servers are in `./dist` as well. Copy/paste and necessary additions.
+#### Do not forget!
+At the moment there are 2 update XML files. Adapt them both.
+- `/upadateservers/master/menudatealiasghsvs-update.xml` (old).
+- `/upadateservers/master/plg_content_menudatealiasghsvs-update.xml`
