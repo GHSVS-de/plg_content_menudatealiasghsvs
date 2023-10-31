@@ -2,49 +2,57 @@
 	"name": "plg_content_menudatealiasghsvs",
 	"nameReal": "plg_content_menudatealiasghsvs",
 	"filename": "menudatealiasghsvs",
-	"version": "2021.09.02",
-	"versionCompare": "2020.05.15",
+	"version": "2023.11.01",
+	"versionCompare": "2021.09.02",
+	"versionSub": "",
 	"update": {
+		"infourl": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs{{thisRelease}}",
 		"type": "plugin",
 		"folder": "content",
 		"client": "site",
 		"tag": "stable",
-		"targetplatform": ".*"
+		"targetplatform": [
+			"4\\.(3|4|5|6|7|8|9|10|11|12|13|14|15)",
+			"5.*"
+		],
+		"namespace": "GHSVS\\Plugin\\Content\\MenuDateAliasGhsvs"
 	},
 	"releaseTxt": {
-		"title": "Joomla content plugin MenuDateAliasGhsvs"
+		"title": "Joomla content plugin MenuDateAliasGhsvs",
+		"requires": [],
+		"uses": [],
+		"language": [
+			"en-GB"
+		]
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs",
 		"infosDE": "",
 		"infosEN": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs#readme",
-		"docsDE": "https://www.ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel",
+		"docsDE": "https://ghsvs.de/programmierer-schnipsel/joomla/189-plugin-menuetyp-menuealias-alias-wieder-zeitstempel",
 		"docsEN": "",
 		"lastTests": [
-			"PHP 8",
-			"PHP 7.4",
-			"Joomla 3.10",
-			"Jommla 4.0"
+			"PHP 8.2",
+			"Jommla 4.4",
+			"Jommla 5.0"
 		]
 	},
-	"minimumPhp": "7.0.0",
-	"maximumPhp": "8.9999.9999",
-	"minimumJoomla": "3.9.0",
-	"maximumJoomla": "4.9999.9999",
+	"minimumPhp": "7.4.0",
+	"maximumPhp": "",
+	"minimumJoomla": "4.3.0",
+	"maximumJoomla": "5.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2016-08-01",
 	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
 	"copyright": "(C) 2016, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)",
 	"author": {
 		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
-		"email": "",
-		"url": "https://www.ghsvs.de"
+		"url": "https://ghsvs.de"
 	},
 	"contributors": [
 		{
 			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
-			"email": "",
-			"url": "https://www.ghsvs.de"
+			"url": "https://ghsvs.de"
 		}
 	],
 	"bugs": "https://github.com/GHSVS-de/plg_content_menudatealiasghsvs/issues",
@@ -64,15 +72,11 @@
 	},
 	"scripts": {
 		"g-build": "node build.js",
-		"updateCheck": "npm outdated",
-		"update": "npm update --save-dev"
+    "updateCheck": "npm outdated",
+    "update": "npm update --save-dev"
 	},
 	"dependencies": {},
-	"devDependencies": {
-		"adm-zip": "^0.5.9",
-		"chalk": "<5",
-		"fs-extra": "^10.1.0",
-		"rimraf": "3.0.2"
-	},
+	"devDependencies": {},
+	"peerDependencies": {},
 	"browserslist": []
 }
