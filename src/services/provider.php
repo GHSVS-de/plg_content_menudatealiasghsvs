@@ -2,11 +2,8 @@
 \defined('_JEXEC') or die;
 
 use Joomla\CMS\Extension\PluginInterface;
-
 use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\PluginHelper;
-#use Joomla\CMS\User\UserFactoryInterface;
-#use Joomla\Database\DatabaseInterface;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use Joomla\Event\DispatcherInterface;
@@ -22,7 +19,7 @@ return new class () implements ServiceProviderInterface {
 		*
 		* @since   4.4.0
 		*/
-	public function register(Container $container): void
+	public function register(Container $container)
 	{
 		$container->set(
 			PluginInterface::class,
