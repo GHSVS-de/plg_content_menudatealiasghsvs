@@ -14,6 +14,7 @@ namespace GHSVS\Plugin\Content\MenuDateAliasGhsvs\Extension;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\Event\DispatcherInterface;
 
 \defined('_JEXEC') or die;
 
@@ -22,6 +23,11 @@ final class MenuDateAliasGhsvs extends CMSPlugin
 	protected $supportedContext = [
 		'com_menus.item',
 	];
+
+	public function __construct(DispatcherInterface $dispatcher, array $config)
+	{
+		parent::__construct($dispatcher, $config);
+	}
 
 	/**
 		* The save event.
