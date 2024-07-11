@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_MENUDATEALIASGHSVS</name>
+	<author>G@HService Berlin Neukölln, Volkmar Volli Schlothauer</author>
+	<creationDate>2016-08-01</creationDate>
+	<copyright>(C) 2016, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt.</license>
+	<authorUrl>https://ghsvs.de</authorUrl>
+	<version>2023.11.01</version>
+	<description>PLG_CONTENT_MENUDATEALIASGHSVS_XML_DESCRIPTION</description>
+
+	<updateservers>
+		<server type="extension" priority="1" name="PLG_CONTENT_MENUDATEALIASGHSVS">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/plg_content_menudatealiasghsvs-update.xml</server>
+	</updateservers>
+
+	<infourl>https://github.com/GHSVS-de/plg_content_menudatealiasghsvs/releases/tag/2023.11.01</infourl>
+
+	<scriptfile>installerScript.php</scriptfile>
+	<minimumPhp>7.4.0</minimumPhp>
+	<maximumPhp></maximumPhp>
+	<minimumJoomla>4.3.0</minimumJoomla>
+	<maximumJoomla>5.9999.9999</maximumJoomla>
+	<allowDowngrades>1</allowDowngrades>
+
+	<files>
+		<folder>language</folder>
+		<folder plugin="menudatealiasghsvs">services</folder>
+		<folder>src</folder>
+		<filename>installerScript.php</filename>
+		<filename>LICENSE.txt</filename>
+	</files>
+	<namespace path="src">GHSVS\Plugin\Content\MenuDateAliasGhsvs</namespace>
+	<config addfieldprefix="GHSVS\Plugin\Content\MenuDateAliasGhsvs\Field">
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="hidden" default="1" name="menudatealiasghsvsplugin" />
+				<field name="onlyNewMenuItems" type="list" default="1"
+					label="PLG_CONTENT_MENUDATEALIASGHSVS_ONLYNEWMENUITEMS"
+					description="PLG_CONTENT_MENUDATEALIASGHSVS_ONLYNEWMENUITEMS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

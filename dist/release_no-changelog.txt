@@ -1,0 +1,25 @@
+2023.11.01
+
+Joomla content plugin MenuDateAliasGhsvs 2023.11.01
+
+Checksum entities: `&lt;sha256&gt;7d0b0f625a5d1ab628f60e879067bea4c7f697f5b876cce9cad4feab2b078e0a&lt;/sha256&gt;`
+
+Joomla content plugin. Bring back datetime alias for menu items of type System Links > Menu Item Alias.
+
+### Download
+[plg_content_menudatealiasghsvs-2023.11.01.zip](https://github.com/GHSVS-de/plg_content_menudatealiasghsvs/raw/2023.11.01/dist/plg_content_menudatealiasghsvs-2023.11.01.zip)
+
+### Joomla-Target-Platform(s)
+4\.(3|4|5|6|7|8|9|10|11|12|13|14|15), 5.&ast;
+
+### For the interested ones
+- [Compare releases 2021.09.02...2023.11.01](https://github.com/GHSVS-de/plg_content_menudatealiasghsvs/compare/2021.09.02...2023.11.01)
+- minimumJoomla: 4.3.0
+- maximumJoomla: 5.9999.9999
+- minimumPhp: 7.4.0
+- maximumPhp:
+- Checksum: `<sha256>7d0b0f625a5d1ab628f60e879067bea4c7f697f5b876cce9cad4feab2b078e0a</sha256>`
+- Readme: https://github.com/GHSVS-de/plg_content_menudatealiasghsvs#readme
+- Updates XML: https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/plg_content_menudatealiasghsvs-update.xml
+- Last tests: PHP 8.2<br>Jommla 4.4<br>Jommla 5.0
+- Language files: en-GB
