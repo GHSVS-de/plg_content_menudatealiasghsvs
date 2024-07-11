@@ -25,8 +25,9 @@ return new class () implements ServiceProviderInterface {
 			PluginInterface::class,
 			function (Container $container)
 			{
+				$dispatcher = $container->get(DispatcherInterface::class);
 				$plugin = new MenuDateAliasGhsvs(
-					$container->get(DispatcherInterface::class),
+					$dispatcher,
 					(array) PluginHelper::getPlugin('content', 'menudatealiasghsvs')
 				);
 				$plugin->setApplication(Factory::getApplication());
